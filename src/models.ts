@@ -1,14 +1,14 @@
 import type { Model } from "@opencode-ai/sdk/v2"
 
 // ── api.npm source constant ────────────────────────────────────────────
-// Local dev: `file://` path to the built provider entry (dist/index.js).
-// Published: change to `"opencode-windsurf-auth"` (the package name).
-// The Provider SDK loader maps `file://` → dynamic import, skipping npm install.
+// Default: npm package name (used when package is published).
+// Local dev override: set WINDSURF_AUTH_LOCAL=1 to use the local dist path
+// (e.g. `export WINDSURF_AUTH_LOCAL=1` before running opencode dev build).
 const PROVIDER_NPM = (): string => {
-  if (typeof process !== "undefined" && process.env["WINDSURF_AUTH_LOCAL"] === "0") {
-    return "opencode-windsurf-auth"
+  if (typeof process !== "undefined" && process.env["WINDSURF_AUTH_LOCAL"] === "1") {
+    return "file:///Users/nghiango-mbp/opencode-learn/opencode-windsurf-auth/dist/index.js"
   }
-  return "file:///Users/nghiango-mbp/opencode-learn/opencode-windsurf-auth/dist/index.js"
+  return "opencode-windsurf-auth"
 }
 
 const BASE_MODEL: Omit<Model, "id" | "name" | "api"> = {
