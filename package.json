@@ -5,10 +5,17 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": ["opencode", "windsurf", "llm", "provider", "plugin", "ai"],
+  "keywords": [
+    "opencode",
+    "windsurf",
+    "llm",
+    "provider",
+    "plugin",
+    "ai"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngotrnghia1811/opencode-windsurf-auth"
+    "url": "git+https://github.com/ngotrnghia1811/opencode-windsurf-auth.git"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
