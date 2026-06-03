@@ -1,5 +1,5 @@
 {
-  "name": "opencode-windsurf-auth",
+  "name": "@ngotrnghia1811/opencode-windsurf-auth",
   "version": "0.1.0",
   "type": "module",
   "publishConfig": {
@@ -8,7 +8,7 @@
   "keywords": ["opencode", "windsurf", "llm", "provider", "plugin", "ai"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nghiango/opencode-windsurf-auth"
+    "url": "https://github.com/ngotrnghia1811/opencode-windsurf-auth"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

@@ -8,7 +8,7 @@ const PROVIDER_NPM = (): string => {
   if (typeof process !== "undefined" && process.env["WINDSURF_AUTH_LOCAL"] === "1") {
     return "file:///Users/nghiango-mbp/opencode-learn/opencode-windsurf-auth/dist/index.js"
   }
-  return "opencode-windsurf-auth"
+  return "@ngotrnghia1811/opencode-windsurf-auth"
 }
 
 const BASE_MODEL: Omit<Model, "id" | "name" | "api"> = {
