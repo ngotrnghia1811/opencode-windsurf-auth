@@ -48,7 +48,7 @@ const windsurfModel = (
 ): Model => ({
   ...BASE_MODEL,
   id: `windsurf/${key}`,
-  name: `Windsurf ${name}`,
+  name: `ws ${name}`,
   capabilities: { ...BASE_MODEL.capabilities, reasoning },
   cost: { input: inputCost, output: outputCost, cache: { read: 0, write: 0 } },
   api: { id: apiId, url: "", npm: PROVIDER_NPM() },
